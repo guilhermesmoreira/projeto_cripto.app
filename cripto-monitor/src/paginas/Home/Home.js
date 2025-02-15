@@ -9,8 +9,8 @@ export function Home() {
             <Sidebar>
                 <Topbar>
                     <div className={style.pagina_conteudo}>
-                        <h3>Seja Bem Vindo.</h3>
-                        <h2>Utilize o menu a esquerda para ir para a funcionalidade desejada!</h2>
+                        <h1>Seja Bem Vindo.</h1>
+                        <h2>Utilize o menu à esquerda para ir para a funcionalidade desejada!</h2>
                     </div>
                 </Topbar>
             </Sidebar>

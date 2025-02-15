@@ -3,6 +3,7 @@ import { MdGroup, MdListAlt } from "react-icons/md";
 import Cripto from "../../assets/cripto.png";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 
 export function Sidebar({ children }) {
@@ -10,7 +11,9 @@ export function Sidebar({ children }) {
         <div>
             <div className={style.sidebar_conteudo}>
                 <div className={style.sidebar_header}>
-                    <img src={Cripto} alt="cripto " className={style.logo_cripto} />
+                    <Link to="/">
+                        <img src={Cripto} alt="cripto " className={style.logo_cripto} />                                        
+                    </Link>
                     <hr className={style.linha} />
                 </div>
                 <div className={style.sidebar_corpo}>
