@@ -1,9 +1,11 @@
-import style from "./Sidebar.module.css";
 import { MdGroup, MdListAlt } from "react-icons/md";
-import Cripto from "../../assets/cripto.png";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { BsGraphUp } from "react-icons/bs";
+import { FiAlertOctagon } from "react-icons/fi";
+import Cripto from "../../assets/cripto.png";
+import style from "./Sidebar.module.css";
 
 
 export function Sidebar({ children }) {
@@ -21,6 +23,12 @@ export function Sidebar({ children }) {
                 </div>
                 <div className={style.sidebar_corpo}>
                    <SidebarItem texto="Listagem" link="/listagem" logo={<MdListAlt />}/>
+                </div>
+                <div className={style.sidebar_corpo}>
+                   <SidebarItem texto="Gráficos" link="/grafico" logo={<BsGraphUp />}/>
+                </div>
+                <div className={style.sidebar_corpo}>
+                   <SidebarItem texto="Alertas" link="/alertas" logo={<FiAlertOctagon />}/>
                 </div>
 
 
